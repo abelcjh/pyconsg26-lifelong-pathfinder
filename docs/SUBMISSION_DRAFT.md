@@ -57,6 +57,6 @@ It gives learners clear next steps instead of overwhelming them. It also gives e
 
 ## Links to include
 
-- GitHub repo: <fill after push>
+- GitHub repo: https://github.com/abelcjh/pyconsg26-lifelong-pathfinder
 - Demo video: <record if time>
 - Process log: `docs/PROCESS_LOG.md`
