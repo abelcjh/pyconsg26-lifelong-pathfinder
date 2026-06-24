@@ -29,6 +29,12 @@ Process:
 - `docs/JUDGING_ALIGNMENT.md` maps the build to every known judging criterion.
 - The recommendation engine is deterministic and tested; OpenAI use is optional and transparent.
 
+## Public demo
+
+Hosted static demo: https://abelcjh.github.io/pyconsg26-lifelong-pathfinder/
+
+The hosted demo runs fully in-browser with the same deterministic scoring logic, so judges do not need API keys or local setup.
+
 ## Run locally
 
 ```bash
