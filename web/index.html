@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillBridge SG</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PyCon Singapore 2026 · Lifelong Learning Hackathon</p>
+        <h1>SkillBridge SG</h1>
+        <p class="lede">Explainable career pathways for Singapore learners: where to go next, what skills matter, and what to do today.</p>
+      </div>
+      <div class="scorecard">
+        <strong>Judging fit</strong>
+        <span>50% process: visible AI/human log</span>
+        <span>50% product: transparent data + clear actions</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <form id="learner-form" class="panel">
+        <div class="row between">
+          <h2>Learner profile</h2>
+          <select id="sample-select" aria-label="Load sample profile"></select>
+        </div>
+        <label>Current role
+          <input id="current_role" value="Operations Coordinator" />
+        </label>
+        <label>Skills you already have (comma separated)
+          <textarea id="skills" rows="5">Spreadsheet Modelling, Stakeholder Communication, Documentation, Problem Solving, Data Cleaning</textarea>
+        </label>
+        <label>Interests / constraints
+          <textarea id="interests" rows="3">less manual reporting, clear career ladder, Python</textarea>
+        </label>
+        <label>Hours per week
+          <input id="hours" type="number" min="1" max="40" value="5" />
+        </label>
+        <button type="submit">Build my pathway</button>
+      </form>
+
+      <section class="panel output">
+        <div class="row between">
+          <h2>Recommendation</h2>
+          <button id="export-btn" class="secondary">Export JSON</button>
+        </div>
+        <div id="result" class="result empty">Run the profile to see ranked pathways.</div>
+      </section>
+    </section>
+
+    <section class="panel">
+      <h2>Why this is trustworthy</h2>
+      <div class="trust">
+        <article><b>Transparent score</b><p>65% technical skill overlap, 20% critical-core overlap, 15% interest fit.</p></article>
+        <article><b>Evidence-first</b><p>Every card shows matched skills, missing skills, key tasks, and source notes.</p></article>
+        <article><b>Actionable</b><p>Each path becomes a 4-week plan based on the learner's weekly time budget.</p></article>
+        <article><b>Human-owned</b><p>AI can coach, but the learner can inspect and challenge the recommendation logic.</p></article>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
